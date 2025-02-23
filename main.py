@@ -16,4 +16,8 @@ def add_numbers_api(payload: PayLoad):
     result = add_numbers(payload.number_one, payload.number_two)
     return {"Hello": "World", "Sum":f"{result}"}
     
+    
+@app.get('/new')
+def random():
+    pass
 
